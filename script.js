@@ -341,6 +341,7 @@ z **= 4; // 3 * 3 * 3 * 3 = 81
 console.log(z);
 */
 
+/*
 // CLASS 4
 
 // Comparison Operators --> <, >, == (loose equality), === (strict equality), >= greater or equal-to, <=, != (loosely), !== (strictly)
@@ -431,3 +432,282 @@ if (username === "Bumi" && isLoggedIn) {
 } else {
   console.log(`Username or password invalid`);
 }
+  */
+
+/*
+// CLASS 5
+
+// let age = 30;
+// let hasLicense = false;
+
+// if (age > 17 && hasLicense) {
+//   console.log(`You are to drive`);
+// } else {
+//   console.log(
+//     `You are not permitted. You have ${age < 18 ? 18 - age : 0} years remaining`,
+//   );
+// }
+
+// else ...if
+// example: if a number is negative, postive or equal 0
+// isNaN()
+// let num = prompt("Please input a number: ");
+// // console.log(isNaN("hello"));
+// // Number(num);
+
+// if (num < 0) {
+//   console.log(`${num} is a negative number`);
+// } else if (num > 0) {
+//   console.log(`${num} is a positive number`);
+// } else if (num === 0) {
+//   console.log(`${num} is equal to 0`);
+// } else {
+//   console.log("Please input a valid number");
+// }
+
+// console.log(score);
+
+let score = 105;
+
+// score --> 90 and above Grade A
+// score --> 80 and 90 Grade B
+// score --> 70 and 80 Grade C
+
+if (score >= 90) {
+  console.log("Grade A");
+} else if (score >= 80) {
+  console.log("Grade B");
+} else if (score >= 70) {
+  console.log("Grade C");
+} else {
+  console.log("Try again");
+}
+
+// Switch Statement
+// Print out the day of the week
+
+// let day = prompt("Input a day of the week: ");
+// console.log(day);
+
+// day = day.toLowerCase();
+// console.log(day);
+
+// switch (day) {
+//   case "sunday":
+//     console.log("It is weekend!");
+//     break;
+
+//   case "monday":
+//     console.log("Today is Monday");
+//     break;
+
+//   case "tuesday":
+//     console.log("Today is Tuesday");
+//     break;
+
+//   case "wednesday":
+//     console.log("Today is Wednesday");
+//     break;
+
+//   case "thursday":
+//     console.log("Today is Thursday");
+//     break;
+
+//   case "friday":
+//     console.log("Today is Friday");
+//     break;
+
+//   case "saturday":
+//     console.log("Today is Saturday");
+//     break;
+
+//   default:
+//     console.log("TPlease inpout a valid day");
+//     break;
+// }
+
+let num = 0;
+
+switch (true) {
+  case num > 0:
+    console.log(`${num} is a positive number)`);
+    break;
+
+  case num < 0:
+    console.log(`${num} is a negative number`);
+    break;
+
+  case num === 0:
+    console.log(`${num} is equal to 0)`);
+    break;
+
+  default:
+    console.log("Please Input a valid number");
+    break;
+}
+
+document.getElementById("nameOfId").addEventListener("click", function () {
+  BigInt.addCla.removeClas;
+});
+*/
+
+/*
+// ClASS 5
+// Print out numbers 0 - 10
+console.log(0);
+console.log(1);
+console.log(2);
+console.log(3);
+console.log(4);
+console.log(5);
+console.log(6);
+console.log(7);
+console.log(8);
+console.log(9);
+console.log(10);
+
+// The for loop
+// x = 1
+// 1s = x (1) (2) (3) < 3 YES. YES. NO
+// x = x + 1. = 2
+// x = x + 1. = 3
+
+for (let x = 1; x < 5; x = x + 1) {
+  console.log('Numbers');
+}
+
+// for (let x = 0; x < 11; x = x + 1) {
+//   // console.log("Numbers", x);
+//   console.log(`Numbers ${x}`);
+// }
+
+// x = 10
+// x >= 0
+// x = x - 1
+// for (let x = 10; x >= 5; x = x - 1) {
+//   console.log(`Numbers ${x}`);
+// }
+
+// Odd numbers between 0 and 20
+// i = i + 1. /// i++
+// i = i + 2. /// i+=2
+// i = i + 5 /// i+=5
+for (let i = 0; i < 101; i++) {
+  if (i % 2 === 1) {
+    console.log(`Even ${i}`); //
+  }
+}
+
+//  For lopp with array
+
+let numbers = [1, 2, 3, 4, 5];
+// nameOfArray.length
+
+// console.log('Length of Numbers in the array', numbers.length);
+// let string = 'Hello, Welcome';
+// console.log('Length of characters in the string', string.length);
+// let num = 4;
+// console.log('Length of number in the number', num.length);
+
+for (let i = 1; i <= numbers.length; i++) {
+  console.log(i);
+}
+
+let countriesArray = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland'];
+// console.log(countriesArray[0]); // finland
+// console.log(countriesArray[1]); // sweden
+// console.log(countriesArray[2]);
+// console.log(countriesArray[3]);
+// console.log(countriesArray[4]);
+
+for (let i = 0; i < countriesArray.length; i++) {
+  console.log(countriesArray[i]);
+}
+
+let fruitsArray = ['apple', 'guava', 'banana', 'grape', 'lemon'];
+// console.log(fruitsArray[0]);
+// console.log(fruitsArray[4]);
+// console.log(fruitsArray[4]);
+// console.log(fruitsArray[4]);
+
+for (let i = 0; i < fruitsArray.length; i++) {
+  console.log(fruitsArray[i]);
+}
+
+let namePlace = 'Ghana';
+namePlace = namePlace.split(''); // split method convert string to an array
+
+for (let i = 0; i < namePlace.length; i++) {
+  console.log(namePlace[i]);
+}
+*/
+
+// CLASS 6
+// While Loop
+
+// syntax
+// intialization
+// while (condition)
+// {
+// code block
+// updater: increment/decrement
+// }
+
+let i = 1;
+while (i <= 10) {
+  console.log(i, 'Hello World');
+  i++;
+}
+
+// let num = 1; // 2 3 4 5
+// let total = 0; // 1  3  6  9
+
+// while (total <= 10) {
+//   total = total + num; // increasing
+//   console.log(total);
+//   // console.log(num);
+//   num++; // num is increasing
+// }
+// console.log(total);
+
+// Do while
+let x = 15; // initializer
+do {
+  console.log(x, 'Do While'); // code block
+  x++; // updater
+} while (x <= 10); // codition
+
+let links = [];
+
+for (let i = 0; i < links.length; i++) {
+  html.textContent = links[i];
+}
+
+// FUNCTION
+
+// syntax
+//function functionName () {
+// code block
+// }
+// functionName() // running a function
+
+// Greet a User
+// function greetUser(firstName) {
+//   // parameter
+//   console.log(`Hello, ${firstName}`);
+//   // console.log('Welcome to Class Today');
+//   // console.log('Today is Friday');
+// }
+// greetUser('Donata'); // argument
+// greetUser('Moh');
+
+// // console.log('Hello, User');
+
+// greetUser('Evans');
+// greetUser('Daniel');
+// greetUser('Tayo');
+
+const something = () => {
+  console.log(`Hello, Daniel`);
+};
+something();
