@@ -642,6 +642,7 @@ for (let i = 0; i < namePlace.length; i++) {
 }
 */
 
+/*
 // CLASS 6
 // While Loop
 
@@ -711,3 +712,593 @@ const something = () => {
   console.log(`Hello, Daniel`);
 };
 something();
+*/
+
+/*
+// CLASS 7
+// function greetUser() {
+//   return 'Welcome, Habiba';
+// }
+// console.log(greetUser());
+// console.log(greetUser());
+// console.log(greetUser());
+
+// // function addNumbers() {
+// //   return 2 + 2;
+// // }
+
+// // FUNCTION DECLARATION
+// function addNumbers() {
+//   let a = 20;
+//   let b = 2;
+//   let c = 5;
+//   let result = a + b + c;
+
+//   return result;
+// }
+
+// // const addNumbersFunc = addNumbers();
+// console.log(addNumbers());
+
+// // FUNCTION EXPRESSION
+// const welcomeAlex = function () {
+//   return 'Welcome, ALex';
+// };
+// console.log('Function Expression: ', welcomeAlex());
+
+// // ARROW FUNCTION
+// // () => {}
+// const arrowFunc = () => {
+//   return 'Hello, this is an arrow function';
+// };
+// console.log(arrowFunc());
+
+// // ANNONYMOUS FUNCTION
+// (function () {
+//   console.log('Hello, this is an annonymous function');
+// })();
+
+// // FUNCTION WITHOUT PARAMETER
+// function printFullName() {
+//   let firstName = 'Tope';
+//   let lastName = 'Alabi';
+//   let fullName = `${firstName} ${lastName}`;
+
+//   return fullName;
+// }
+// console.log(printFullName());
+
+// FUNCTION WITH PARAMETER(S)
+// function printUserame(username) {
+//   return `Welcome ${username}`;
+// }
+// console.log(printUserame('Moh'));
+// console.log(printUserame('John'));
+// console.log(printUserame('Alex'));
+// console.log(printUserame('Alfred'));
+
+// function addNumbers(a, b, c) {
+//   console.log(a, b);
+//   let result = a * b + c;
+
+//   return result;
+// }
+
+// console.log(addNumbers(7, 8, 5));
+
+// // Math Object in js
+// console.log(Math.PI);
+
+// function areaOfCircle(radius) {
+//   let area = Math.PI * radius * radius;
+
+//   return area;
+// }
+// console.log(areaOfCircle(13));
+// console.log(areaOfCircle(3));
+// console.log(areaOfCircle(5));
+
+// // FUNCTION WITH DEFAULT PARAMETER(S)
+// function addNumbers(a = 4, b = 5, c = 10) {
+//   console.log(a, b);
+//   let result = a * b + c;
+
+//   return result;
+// }
+
+// console.log(addNumbers(7, 8, 20));
+
+// function printUserame(username = 'Guest') {
+//   return `Welcome ${username}`;
+// }
+// console.log(printUserame('Moh'));
+// console.log(printUserame());
+
+// CHeck For even or Odd Number
+function checkEvenOrOddNumber(num) {
+  let value;
+
+  // if (isNaN(num)) {
+  //   // true
+  //   return 'Please input a valid number';
+  // } else
+
+  if (num % 2 === 0) {
+    value = 'Even';
+  } else if (num % 2 === 1) {
+    value = 'Odd';
+  } else {
+    return 'Please input a valid number';
+  }
+
+  return value;
+}
+console.log(checkEvenOrOddNumber(10));
+console.log(checkEvenOrOddNumber(1));
+console.log(checkEvenOrOddNumber(7));
+console.log(checkEvenOrOddNumber('s'));
+
+// Check Age Eligibility
+function checkVotingEligibility(age = 18) {
+  if (age > 17) {
+    return 'You can vote';
+  } else {
+    return 'You can not vote. Wait till you are 18';
+  }
+}
+
+// const ageChecker = prompt('Please input your age: ');
+console.log(checkVotingEligibility(22));
+
+// Grade Evaluator
+function evaluateGrade(val) {
+  let grade;
+
+  if (val >= 90) {
+    grade = 'A';
+  } else if (val >= 80) {
+    grade = 'B';
+  } else if (val >= 70) {
+    grade = 'C';
+  } else {
+    return 'You failed, come back next year';
+  }
+
+  return grade;
+}
+console.log(evaluateGrade(150));
+console.log(evaluateGrade(50));
+console.log(evaluateGrade(75));
+*/
+
+/*
+// CLASS 8
+// More Examples
+
+// Product Discount
+
+const product1 = {
+  name: 'laptop',
+  price: 1000, // 1000 - 100
+  isMember: true,
+};
+const product2 = {
+  name: 'phone',
+  price: 1000, // 1000 - 100
+  isMember: false,
+};
+const product3 = {
+  name: 'earbuds',
+  price: 50000, // 1000 - 100
+  isMember: true,
+};
+
+function calculateFinalPrice(xyz) {
+  // product
+  console.log(xyz);
+  let newProductprice;
+
+  if (xyz.isMember) {
+    // calculations
+    newProductprice = xyz.price * 0.9;
+  } else {
+    // print oput the normal price
+    newProductprice = xyz.price;
+  }
+
+  return newProductprice;
+}
+console.log(calculateFinalPrice(product1));
+console.log(calculateFinalPrice(product2));
+console.log(calculateFinalPrice(product3));
+
+const products = [
+  {
+    id: 1,
+    name: 'laptop',
+    price: 10000,
+    isMember: true,
+  },
+  {
+    id: 2,
+    name: 'phone',
+    price: 3000,
+    isMember: false,
+  },
+  {
+    id: 3,
+    name: 'earbuds',
+    price: 50000,
+    isMember: true,
+  },
+  {
+    id: 4,
+    name: 'charger',
+    price: 20000,
+    isMember: true,
+  },
+  {
+    id: 5,
+    name: 'powerbank',
+    price: 10000,
+    isMember: true,
+  },
+];
+
+// function calculateFinalPrices(prod) {
+//   // console.log(prod);
+//   let newProductpriceArr = [];
+
+//   // loop through
+//   // Write your logic
+
+//   for (let i = 0; i < prod.length; i++) {
+//     // console.log(prod[i]);
+//     let newProductprice;
+
+//     if (prod[i].isMember) {
+//       newProductprice = prod[i].price * 0.9;
+//       // prod[i].newPrice = newProductprice;
+//     } else {
+//       newProductprice = prod[i].price;
+//       // prod[i].newPrice = newProductprice;
+//     }
+
+//     // create a array(store) and save the new prices (with their name)
+//     // console.log(newProductprice);
+//     newProductpriceArr.push({
+//       // ...prod,
+//       id: prod[i].id,
+//       name: prod[i].name,
+//       price: prod[i].price,
+//       isMember: prod[i].isMember,
+
+//       discountedPrice: newProductprice,
+//     });
+//   }
+
+//   return newProductpriceArr;
+
+//   // return the newprices array(store)
+// }
+
+// function calculateFinalPrices(prod) {
+//   let newProductpriceArr = [];
+
+//   for (let i = 0; i < prod.length; i++) {
+//     // console.log(prod[i]);
+
+//     let newProductprice;
+//     if (prod[i].isMember) {
+//       newProductprice = prod[i].price * 0.9;
+//     } else {
+//       newProductprice = prod[i].price;
+//     }
+
+//     newProductpriceArr.push({
+//       // id: prod[i].id,
+//       // name: prod[i].name,
+//       // price: prod[i].price,
+//       // isMember: prod[i].isMember,
+//       ...prod[i],
+//       // Adding a new key: value pair
+//       discountedPrice: newProductprice,
+//     });
+//   }
+
+//   return newProductpriceArr;
+
+//   // const newProd = prod.map((item) => {
+//   //   const finalprice =
+//   //     item.isMember === true
+//   //       ? { ...item, newPrice: item.price * 0.9 }
+//   //       : { ...item, newPrice: item.price };
+
+//   //   return finalprice;
+//   // });
+
+//   // return newProd;
+// }
+// console.log(products);
+// console.log(calculateFinalPrices(products));
+
+// function countryname(params) {
+//   console.log([...params]);
+// }
+
+const nums1 = [1, 2, 3, 4, 5];
+const nums2 = [6, 7, 8, 9];
+
+console.log([...nums1, ...nums2]);
+*/
+
+/*
+// CLASS 9
+const username1 = 'admin';
+const password1 = '1234';
+
+const username2 = 'Ope';
+const password2 = 'secret1';
+
+// function validateLogin(username, password) {
+//   let loginResponse;
+
+//   if (username === 'admin' && password === '1234') {
+//     loginResponse = 'Login successful';
+//   } else {
+//     loginResponse = 'invalid credential';
+//   }
+
+//   return loginResponse;
+// }
+// console.log(validateLogin(username, password));
+
+const usersStore = [
+  { id: 1, username: 'Ope', password: 'secret1' },
+  { id: 2, username: 'Dayo', password: 'secret2' },
+];
+
+const postsStore = [
+  { userId: 1, feeds: 'My JavaScript learning process day 20' },
+  { userId: 2, feeds: 'JavaScript is so so so interesting' },
+  { userId: 1, feeds: 'Understanding arrays and objects interesting' },
+];
+
+// // check if user exists
+// function authenticate(usenameInput, passwordInput) {
+//   // go through (loop) through the store
+//   console.log(usenameInput, passwordInput);
+//   for (let i = 0; i < usersStore.length; i++) {
+//     if (
+//       usersStore[i].username === usenameInput &&
+//       usersStore[i].password === passwordInput
+//     ) {
+//       // return `Welcome ${usersStore[i].username}`;
+//       return usersStore[i];
+//     }
+
+//     // return 'User does not exist';
+//     return null;
+//   }
+
+//   // check if user exist
+
+//   // return the user
+// }
+// console.log(authenticate(username2, password2));
+
+// // get the posts of the user
+// function getUserPosts(userObj) {
+//   // loop through post
+//   let postFeeds = [];
+//   for (let i = 0; i < postsStore.length; i++) {
+//     if (postsStore[i].userId === userObj.id) {
+//       postFeeds.push(postsStore[i].feeds);
+//       console.log(postsStore[i].feeds);
+//     }
+//   }
+
+//   return postFeeds;
+// }
+
+// console.log(getUserPosts(usersStore[0]));
+// const loggedIn =
+
+// if (authenticate(username2, password2)) {
+//   console.log(
+//     `Welcome ${authenticate(username2, password2).username}. This is your post: ${getUserPosts(usersStore[authenticate(username2, password2).id])}`,
+//   );
+// }
+
+// check if user exists
+function authenticate(usenameInput, passwordInput) {
+  // go through (loop) through the store
+  // const userObj = usersStore.find((item, index) => {
+  //   return item.username === usenameInput && item.password === passwordInput;
+  // });
+
+  for (let i = 0; i < usersStore.length; i++) {
+    // console.log(usersStore[i]);
+    if (
+      usersStore[i].username === usenameInput &&
+      usersStore[i].password === passwordInput
+    ) {
+      return usersStore[i];
+    }
+  }
+  // check if user exist
+
+  return userObj;
+}
+// console.log(authenticate(username2, password2));
+const userObjStore = authenticate(username2, password2); // returns an Obj
+
+function getUserPosts(userObj) {
+  // console.log(userObj);
+  let postFeeds = [];
+  for (let i = 0; i < postsStore.length; i++) {
+    if (postsStore[i].userId === userObj.id) {
+      // console.log(postsStore[i].feeds);
+      postFeeds.push(postsStore[i].feeds);
+    }
+  }
+
+  return postFeeds;
+}
+console.log(getUserPosts(userObjStore));
+
+// JavaScript Built-in Methods
+// Numbers method
+console.log(Number('123.45px'));
+console.log(parseInt('1234', 5));
+*/
+
+// CLASS 10
+// Arrays/ArrayMethods
+// Creating an Empty Array
+
+// Array()
+const arr1 = Array(5).fill('x');
+console.log(arr1);
+
+const arr2 = [];
+console.log(arr2);
+
+const countries = [
+  'Finland',
+  'Denmark',
+  'Ghana',
+  'Sweden',
+  'Norway',
+  'Iceland',
+];
+console.log(countries);
+
+const NoOfCountries = countries.length;
+console.log(NoOfCountries);
+
+console.log(countries[0]);
+console.log(countries[2]);
+console.log(countries[countries.length - 1]);
+
+// Modifying Array
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// numbers[2] = 30;
+// numbers[3] = 40;
+// numbers[5] = 60;
+// console.log(numbers);
+
+const firstList = [1, 2, 3];
+const secondList = [4, 5, 6];
+
+// const thirdList = firstList.concat(secondList);
+// console.log(thirdList);
+
+// console.log(thirdList.concat(firstList));
+
+console.log([...firstList, ...secondList]);
+
+// Adding & Removing items at the End
+// Push & Pop
+const fruits = ['banana', 'orange', 'mango'];
+fruits.push('orange');
+console.log(fruits);
+
+fruits.push('orange');
+console.log(fruits);
+
+fruits.push('lemon');
+console.log(fruits);
+
+// Pop
+fruits.pop();
+console.log(fruits);
+
+fruits.pop();
+console.log(fruits);
+
+// Adding & Removing items at the Beginning
+// Unshift & Shift
+fruits.unshift('lemon');
+console.log(fruits);
+
+// Shift
+fruits.shift();
+console.log(fruits);
+
+// reverse
+// console.log(numbers);
+// numbers.reverse();
+// console.log(numbers);
+
+// sort
+const webTechs = ['HTML', 'CSS', 'JS', 'React', 'Node'];
+webTechs.sort();
+console.log(webTechs);
+
+const numbersNew = numbers.slice();
+// console.log(numbers.slice(0));
+console.log(numbersNew);
+
+// numbersNew.splice(4, 1, 100, 200);
+// console.log(numbersNew);
+
+console.log(numbersNew.splice(4, 1));
+console.log(numbersNew);
+console.log(numbersNew.includes(9));
+
+// for (let i = 0; i < numbersNew.length; i++) {
+//   console.log(numbersNew[i]);
+// }
+
+numbersNew.forEach(function (number) {
+  console.log(number);
+});
+
+// webTechs.forEach(function (item, index) {
+//   console.log(index + 1, item.toUpperCase());
+// });
+
+// webTechs.forEach((item, index) => {
+//   console.log(index + 1, item.toUpperCase());
+//   console.log(index + 1, item.toUpperCase());
+
+// });
+
+webTechs.forEach((item, index) => console.log(index + 1, item.toUpperCase()));
+
+const users = [
+  { name: 'Alice', email: 'alice@example.com' },
+  { name: 'Bob', email: 'bob@example.com' },
+  { name: 'Charlie', email: 'charlie@example.com' },
+];
+
+const whatever = users.forEach((user) => {
+  console.log(` ${user.email}: Welcome to The new Year`);
+});
+
+// map
+const prices = [10, 20, 30, 40];
+const pricesWithTax = [];
+
+for (let i = 0; i < prices.length; i++) {
+  // pricesWithTax.push((prices[i] * 1.08).toFixed(1));
+  pricesWithTax.push(prices[i] * 1.08);
+}
+
+console.log(pricesWithTax);
+
+// const mapPricesWithtax = prices.map(function (price) {
+//   return Number((price * 1.08).toFixed(1));
+// });
+
+// console.log(mapPricesWithtax);
+
+// const anything = prices.map(function (price) {
+//   const val = price * 1.08;
+//   return val.toFixed(1);
+// });
+// console.log(anything);
+
+const anything = prices.map((price) => +(price * 1.08).toFixed(1));
+console.log(anything);
